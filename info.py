@@ -1,4 +1,5 @@
 infura_goerli_url = 'https://goerli.infura.io/v3/8596c2e3a7704213911e675a8eedd635'
+sibr_net_url = 'https://rpc.test.siberium.net'
 
 goerli_ms_sc_adr = '0x013538B357A4c2CcdE81E2318e5cA0560c171C8e'
 #goerli_ms_sc_adr_test = '0x0466B5ccccE6c334331f3fB08a5ff26c29B5E7eA'
@@ -14,3 +15,21 @@ sibr_ms_sc_abi = '[{"inputs":[{"internalType":"address[]","name":"_guardians","t
 
 sibr_weths_sc_adr = "0xfa9CaD4Ab2BC505e805986fC27e1c6A44853E2CD"
 sibr_weths_sc_abi = goerli_wsibr_sc_abi
+
+provider_of_sc = {
+    #goerli_ms_sc_adr_test: infura_goerli_url,
+    goerli_ms_sc_adr: infura_goerli_url,
+    goerli_wsibr_adr: infura_goerli_url,
+    #sibr_ms_sc_adr_test: sibr_net_url,
+    sibr_ms_sc_adr: sibr_net_url,
+    sibr_weths_sc_adr: sibr_net_url
+}
+
+abi_of_sc = {
+    #goerli_ms_sc_adr_test: goerli_ms_sc_abi,
+    goerli_ms_sc_adr: goerli_ms_sc_abi,
+    goerli_wsibr_adr: goerli_wsibr_sc_abi,
+    #sibr_ms_sc_adr_test: sibr_ms_sc_abi,
+    sibr_ms_sc_adr: sibr_ms_sc_abi,
+    sibr_weths_sc_adr: sibr_weths_sc_abi
+}

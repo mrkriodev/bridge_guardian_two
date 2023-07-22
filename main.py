@@ -40,7 +40,7 @@ def standard_trx_build_for_sc_call_with_gas(base_adr, provider_url: str) -> dict
         'maxPriorityFeePerGas': 3000000000,
     }
     gas_eddition = 1000
-    if not provider_url.index("infura"):
+    if provider_url.find("infura") != -1:
         gas_eddition = 10000
     gas = web3.eth.estimate_gas(build_trx_config) + gas_eddition
     build_trx_config['gas'] = gas + int(gas * 0.2)

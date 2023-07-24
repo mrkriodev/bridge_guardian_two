@@ -156,8 +156,8 @@ def listen_eth_and_sibr_events():
     try:
         loop.run_until_complete(
             asyncio.gather(
-                eth_events_handler(eth_event_filters, 1),
-                sibr_events_handler(sibr_event_filters, 1)
+                eth_events_handler(eth_event_filters, 5),
+                sibr_events_handler(sibr_event_filters, 5)
             ))
     finally:
         # close loop to free up system resources
